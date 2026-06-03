@@ -1,31 +1,31 @@
 <?php
 /**
- * Lesson Movie Handler Class
- * This is the blueprint for the API fetches
+ * LessonMovieHandler Class
+ * Blueprint for executing basic API fetches
  */
-    class LessonMovieHandler{
-        private $targetUrl;
-        private $securityKey;
+class LessonMovieHandler {
+    private $targetUrl;
+    private $securityKey;
 
-        public function__construct($incomingUrl, $incomingKey){
-
-            $this->targetUrl = $incomingUrl;
-            $this->$securityKey = $incomingKey;
-        }
-        /**
-         * this pulls the movie dataset from the API
-         */
-        public function fetchCurrentPopular($selectedPage =1){
-            //constructiong the string with newly assigned class properties
-            $endpointUrl = "{$this->targetUrl}/movie/popular?api_key={$this->securityKey}&language=en-US&page=" . intval{$selectedPage};
-
-            $rawJsonString = @file_get_contents($endpointUrl);
-            if($rawJsonString === false){
-                return [];
-            }
-            $decodedPayLoad = json_decode($rawJsonString);
-            return $decodedPayLoad->results ?? [];
-        }
+    public function __construct($incomingUrl, $incomingKey) {
+        $this->targetUrl = $incomingUrl;
+        $this->securityKey = $incomingKey;
     }
 
-?>
+    /**
+     * Pulls movie datasets from the API
+     */
+    public function fetchCurrentPopular($selectedPage = 1) {
+        // Constructing string with newly assigned class properties
+        $endpointUrl = "{$this->targetUrl}/movie/popular?api_key={$this->securityKey}&language=en-US&page=" . intval($selectedPage);
+        
+        $rawJsonString = @file_get_contents($endpointUrl);
+        
+        if ($rawJsonString === false) {
+            return [];
+        }
+
+        $decodedPayload = json_decode($rawJsonString);
+        return $decodedPayload->results ?? [];
+    }
+}
