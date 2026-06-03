@@ -1,7 +1,3 @@
-<?php
-var_dump(isset($lessonActivePage));
-var_dump(isset($lessonMovieRecords));
-?>
 <!doctype html>
 <html lang="en">
     <head>
