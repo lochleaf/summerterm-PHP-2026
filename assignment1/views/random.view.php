@@ -22,6 +22,9 @@
                     
                     <h2>
                         <?php echo $user->name->first; ?>
+                    </h2>
+
+                    <h2>
                         <?php echo $user->name->last; ?>
                     </h2>
 
