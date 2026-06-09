@@ -1,9 +1,24 @@
 @charset "UTF-8";
 
+/* made the background color black */
 html{
     background: black;
 }
 
+/* positioning the usercard with the img and centering the img and made font white */
 .userCard {
+
+    position: absolute;
+
+    left: 40%;
+    top: 30%;
+
+    color: aliceblue;
     text-align: center;
+}
+
+/* made the sizing of the img bigger */
+.userPhoto{
+    height: 400px;
+    width: 400px;
 }

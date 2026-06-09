@@ -6,16 +6,15 @@
         <meta name="description" content="API assignment1 doing random api which will generate random user informations">
         <meta name="robots" content="noindex, nofollow">
         <title>API Assignment1</title>
-        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="css/styles.css">
     
     </head>
     <body>
         <main>
-            <section class='greetings'>
-                <h2>Welcome</h2>
-            </section>
-
-            <section class = userCard>
+            <!-- here is image I tried to add for the css -->
+            <!-- <img class="lavaLamp" src="../images/lava-background.gif" alt="Lava Lamp"> -->
+            <!-- here is the usercard that gets generated that get the information and brings out the photos that is seen on the page and it keeps generating new profiles -->
+            <section class = "userCard">
 
             <?php foreach($randomUsers as $user): ?>
                 <div class = 'card'>

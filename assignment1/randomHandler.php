@@ -1,7 +1,7 @@
 <?php
 /**
- * LessonMovieHandler Class
- * Blueprint for executing basic API fetches
+ * randomHandler Class
+ * Blueprint for executing basic API fetches from the files content
  */
 class randomHandler {
     private $targetUrl;
