@@ -3,23 +3,19 @@
  * LessonMovieHandler Class
  * Blueprint for executing basic API fetches
  */
-class dogHandler {
+class randomHandler {
     private $targetUrl;
-    private $securityKey;
 
-    public function __construct($incomingUrl, $incomingKey) {
+    public function __construct($incomingUrl) {
         $this->targetUrl = $incomingUrl;
-        $this->securityKey = $incomingKey;
     }
 
     /**
      * Pulls movie datasets from the API
      */
-    public function fetchInfo($firstName = " ") {
+    public function fetchInfo() {
         // Constructing string with newly assigned class properties
-        $endpointUrl = "{$this->targetUrl}/images/search?api_key={$this->securityKey}&language=en-US&page=" . intval($selectedPage);
-        
-        $rawJsonString = @file_get_contents($endpointUrl);
+        $rawJsonString = @file_get_contents($this->targetUrl);
         
         if ($rawJsonString === false) {
             return [];

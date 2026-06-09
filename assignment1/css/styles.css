@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+html{
+    background: black;
+}
+
+.userCard {
+    text-align: center;
+}

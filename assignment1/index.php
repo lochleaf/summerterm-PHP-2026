@@ -1,16 +1,13 @@
 <?php
 
 require_once "config.php";
-require_once "dogHandler.php";
-
-// Modified variables to explicitly state "lesson" context
-$activePage = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+require_once "randomHandler.php";
 
 // Instantiate using the newly named classroom class
-$dogHandlerInstance = new dogHandler(DOG_BASE_URL, DOG_API_KEY);
-$dogRecords = $dogHandlerInstance->fetchCurrentPopular($activePage);
+$randomHandlerInstance = new randomHandler(RANDOM_BASE_URL);
+$randomUsers = $randomHandlerInstance->fetchInfo();
 
 // Include the isolated markup layer
-require_once "views/dogs.view.php";
+require_once "views/random.view.php";
 
 ?>
