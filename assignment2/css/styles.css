@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+.background{
+    background-image: url("../images/assignment2_pizzaform_asset2.png");
+    background-size: cover;
+    color: rgb(27, 30, 243);
+    overflow: hidden;
+    background-size: 100%;
+}
+
+/*#menupageone{
+    background-image: url("../images/assignment2_pizzaform_asset3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; 
+    min-height: 700px;*/
+    /*height: 902px;
+    width: 585px;*/
+    /*height: 1002px;
+    width: 715px;
+    position: absolute;
+    right: 64%;
+}
+
+#menupagetwo{
+    background-image: url("../images/assignment2_pizzaform_asset1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; 
+    min-height: 700px;*/
+    /*height: 902px;
+    width: 585px;*/
+    /*height: 1002px;
+    width: 715px;
+    position: absolute;
+    right: 31%;
+    text-align: center;
+}
+
+#menupagethree{
+    background-image: url("../images/assignment2_pizzaform_asset1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; 
+    min-height: 700px;*/
+    /*height: 902px;
+    width: 585px;*/
+    /*height: 1002px;
+    width: 715px;
+    position: absolute;
+    right: -2%;
+    text-align: center;
+}*/
+
+.menu-container{
+    display: flex;
+    justify-content: center;
+}
+
+#menupageone{
+    background-image: url("../images/assignment2_pizzaform_asset3.png");
+    background-size: contain;
+    /*background-size: 120% 120%;*/
+    background-position: center top;
+    padding-right: 40px;
+}
+
+.menupageonesize{
+    width: 4590px;
+    height: 2452px;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-right: 500px;
+}
+
+#menupagetwo{
+    background-image: url("../images/assignment2_pizzaform_asset1.png");
+    background-size: contain;
+    /*background-size: 120% 120%;*/
+    background-position: center top;
+}
+
+.menupagetwosize{
+    width: 5410px;
+    height: 3382px;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#menupagethree{
+    background-image: url("../images/assignment2_pizzaform_asset1.png");
+    background-size: contain;
+    /*background-size: 120% 120%;*/
+    background-position: center top;
+}
+
+.menupagethreesize{
+    width: 5410px;
+    height: 3382px;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* padding: 2px; */
+}
