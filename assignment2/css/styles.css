@@ -63,6 +63,7 @@
     /*background-size: 120% 120%;*/
     background-position: center top;
     padding-right: 40px;
+    text-align: center;
 }
 
 .menupageonesize{
@@ -84,6 +85,7 @@
     background-size: contain;
     /*background-size: 120% 120%;*/
     background-position: center top;
+    text-align: center;
 }
 
 .menupagetwosize{
@@ -104,6 +106,7 @@
     background-size: contain;
     /*background-size: 120% 120%;*/
     background-position: center top;
+    text-align: center;
 }
 
 .menupagethreesize{
