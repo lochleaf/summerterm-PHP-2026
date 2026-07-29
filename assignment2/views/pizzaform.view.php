@@ -1,24 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP Assignment 2 Pizza Form</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body class="background">
-    <nav>
-        <ul>
-            <a href="index.php?page=pizza">Pizza</a>
-            <a href="index.php?page=location">Location</a>
-            <a href="index.php?page=cart">Cart</a>
-        </ul>
-    </nav>
-
-    <main>
-
-        <div class="menu-container">
+        <!-- <div class="menu-container"> 
             
 
             <div id= "menupageone" class= "menupageonesize">
@@ -80,11 +60,8 @@
 
                 <textarea id="message" name="message" rows="4" cols="50"></textarea>
 
+                <h2>Submit</h2>
+
             </div>
 
-        </div>
-
-    </main>
-    
-</body>
-</html>
+        </div>-->
