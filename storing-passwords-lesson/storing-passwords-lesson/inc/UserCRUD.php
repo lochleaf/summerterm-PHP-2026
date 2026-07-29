@@ -1,5 +1,6 @@
 <?php 
     require_once 'Database.php';
+    
     class UserCRUD{
       private PDO $conn;
       private string $table_name = 'users';
