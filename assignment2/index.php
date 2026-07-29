@@ -1,22 +1,8 @@
-<?php
+<?php include_once 'templates/header.php'; ?>
 
-/*$page = $_GET["page"] ?? "pizza";
+<body class="background">
 
-if ($page == "pizza") 
-    {require "views/pizzaform.view.php";
-}
-
-elseif ($page == "location") 
-    {require "views/location.view.php";
-}
-
-elseif ($page == "cart") 
-    {require "views/cart.view.php";
-}*/
-
-?>
-
-<?php include_once 'includes/header.php'; ?>
+    <main>
 
     <div class="menu-container"> 
                 
