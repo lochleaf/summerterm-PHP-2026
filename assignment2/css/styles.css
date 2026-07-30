@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/* custom fonts that are imported from googlefonts */
 @font-face {
     font-family: 'Bubbles';
     src: url("../Rubik_Bubbles/RubikBubbles-Regular.ttf");
@@ -10,39 +11,39 @@
     src: url("../Rubik_Gemstones/RubikGemstones-Regular.ttf");
 }
 
-@font-face {
-    font-family: 'Puddles';
-    src: url("../Rubik_Puddles/RubikPuddles-Regular.ttf");
-}
-
+/* style the background image of the webpage that will cover the entire page that doesnt scroll*/
 .background{
     background-image: url("../images/assignment2_pizzaform_asset2.png");
     background-size: cover;
-    color: rgb(27, 30, 243);
     overflow: hidden;
     background-size: 100%;
 }
 
+/* Background img menu one made it into contain */
 #menupageone{
     background-image: url("../images/assignment2_pizzaform_asset3.png");
     background-size: contain; 
 }
 
+/* Background img menu two made it into contain */
 #menupagetwo{
     background-image: url("../images/assignment2_pizzaform_asset1.png");
     background-size: contain;
 } 
 
+/* Background img menu three made it into contain */
 #menupagethree{
     background-image: url("../images/assignment2_pizzaform_asset1.png");
     background-size: contain;   
 }
 
+/* Display all menu imgs beside each other and center them */
 .menu-container{
     display:flex;
     justify-content:center;  
 }
 
+/* Set the size and position of each menu img */
 .menupageonesize,
 .menupagetwosize,
 .menupagethreesize{
@@ -57,6 +58,7 @@
     position:relative;
 }
 
+/* Position and style the text on img menu two */
 .textplacetwo{
     text-align: center;
     padding-top: 320px;
@@ -67,6 +69,7 @@
     font-weight: bold;
 }
 
+/* Position and style the customer information on img menu one */
 .textplaceone{
     text-align: left;
     padding-top: 605px;
@@ -79,8 +82,10 @@
     font-family: 'Gem', sans-serif;
 }
 
+/* Position and style the text on img menu three */
 .textplacethree{
     text-align: center;
+    /* made it to use placement of the text to be inside images i know i know */
     padding-top: 340px;
     padding-left: 130px;
     padding-right: 130px;
@@ -89,15 +94,21 @@
     font-weight: bold;
 }
 
+/* Style the labels on page two */
 .textplacetwo label{
+    /* this help with the checkbox to be beside the text */
     display: flex;
+    /* this to center to be align with checkbox */
     align-items: center;
+    /* give each label fixed width to keep everything to be lined up */
     width: 140px;
+    /* helps with placement */
     margin: 8px auto;
     text-align: left;
     padding-left: 35px;
 }
 
+/* Style the labels on page three */
 .textplacethree label{
     display: flex;
     align-items: center;
@@ -107,31 +118,37 @@
     padding-left: 33px;
 }
 
+/* made this because it was also styling the placemnt of the button so block the flex box so the button can be underneath the textbox */
 .textplacethree button{
     display: block;
+    /* to center it heheh... */
     margin-left: auto;
     margin-right: auto;
 }
 
+/* Adds spacing between radio&checkbox and text */
 .textplacetwo input{
     margin-right: 6px;
 }
 
+/* Adds spacing between radio&checkbox and text */
 .textplacethree input{
     margin-right: 6px;
 }
 
+/* Adds spacing between radio&checkbox and text */
 .textplacetwo label{
-    display: block;
     margin-bottom: 8px;
 }
 
+/* Style the footer text */
 footer{
     text-align: center;
     font-family: 'Bubbles', sans-serif;
     color: rgb(196, 90, 160);
 }
 
+/* Style main titles */
 .texttitle{
     font-size: 18px;
     text-align: center;
@@ -139,6 +156,7 @@ footer{
     color: rgb(196, 90, 160);
 }
 
+/* Style sub titles */
 .textsubtitle{
     font-size: 14px;
     text-align: left;

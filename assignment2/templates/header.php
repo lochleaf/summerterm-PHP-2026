@@ -1,3 +1,4 @@
+<!-- Header html used a tiny bit of bootstrap so I added the link but I mainly used css -->
 <!DOCTYPE html>
 <html lang="en">
 <head>

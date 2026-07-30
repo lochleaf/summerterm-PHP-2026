@@ -1,3 +1,4 @@
+    <!-- my footer with just date and text -->
     </main>
 
     <footer>
