@@ -8,117 +8,118 @@
     background-size: 100%;
 }
 
-/*#menupageone{
-    background-image: url("../images/assignment2_pizzaform_asset3.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain; 
-    min-height: 700px;*/
-    /*height: 902px;
-    width: 585px;*/
-    /*height: 1002px;
-    width: 715px;
-    position: absolute;
-    right: 64%;
-}
-
-#menupagetwo{
-    background-image: url("../images/assignment2_pizzaform_asset1.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain; 
-    min-height: 700px;*/
-    /*height: 902px;
-    width: 585px;*/
-    /*height: 1002px;
-    width: 715px;
-    position: absolute;
-    right: 31%;
-    text-align: center;
-}
-
-#menupagethree{
-    background-image: url("../images/assignment2_pizzaform_asset1.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain; 
-    min-height: 700px;*/
-    /*height: 902px;
-    width: 585px;*/
-    /*height: 1002px;
-    width: 715px;
-    position: absolute;
-    right: -2%;
-    text-align: center;
-}*/
-
-.menu-container{
-    display: flex;
-    justify-content: center;
-}
-
 #menupageone{
     background-image: url("../images/assignment2_pizzaform_asset3.png");
-    background-size: contain;
-    /*background-size: 120% 120%;*/
-    background-position: center top;
-    padding-right: 40px;
-    text-align: center;
-}
-
-.menupageonesize{
-    width: 4590px;
-    height: 2452px;
-
-    background-repeat: no-repeat;
-    background-size: contain;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    padding-right: 500px;
+    background-size: contain; 
 }
 
 #menupagetwo{
     background-image: url("../images/assignment2_pizzaform_asset1.png");
     background-size: contain;
-    /*background-size: 120% 120%;*/
-    background-position: center top;
-    text-align: center;
-}
-
-.menupagetwosize{
-    width: 5410px;
-    height: 3382px;
-
-    background-repeat: no-repeat;
-    background-size: contain;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
+} 
 
 #menupagethree{
     background-image: url("../images/assignment2_pizzaform_asset1.png");
-    background-size: contain;
-    /*background-size: 120% 120%;*/
-    background-position: center top;
+    background-size: contain;   
+}
+
+.menu-container{
+    display:flex;
+    justify-content:center;  
+}
+
+
+.menupageonesize,
+.menupagetwosize,
+.menupagethreesize{
+
+    width:700px;
+    height:900px;
+
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:100% 100%;
+
+    position:relative;
+}
+
+.textplacetwo{
+    text-align: center;
+    padding-top: 300px;
+    padding-left: 130px;
+    padding-right: 130px;
+    font-size: 11px;
+}
+
+.textplaceone{
+    text-align: left;
+    padding-top: 605px;
+    padding-left: 150px;
+    padding-right: 150px;
+    font-size: 14px;
+}
+
+.textplacethree{
+    text-align: center;
+    padding-top: 350px;
+    padding-left: 130px;
+    padding-right: 130px;
+    font-size: 11px;
+    
+}
+
+/* .textplacethree label{
+    display: block;
+    margin-bottom: 8px;
+} */
+
+.textplacetwo label{
+    display: flex;
+    align-items: center;
+    width: 140px;
+    margin: 8px auto;
+    text-align: left;
+    padding-left: 35px;
+}
+
+.textplacethree label{
+    display: flex;
+    align-items: center;
+    width: 140px;
+    margin: 8px auto;
+    text-align: left;
+    padding-left: 33px;
+}
+
+.textplacethree button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.textplacetwo input{
+    margin-right: 10px;
+}
+
+.textplacethree input{
+    margin-right: 10px;
+}
+
+.textplacetwo label{
+    display: block;
+    margin-bottom: 8px;
+}
+
+footer{
     text-align: center;
 }
 
-.menupagethreesize{
-    width: 5410px;
-    height: 3382px;
+.texttitle{
+    font-size: 18px;
+    text-align: center;
+}
 
-    background-repeat: no-repeat;
-    background-size: contain;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    /* padding: 2px; */
+.textsubtitle{
+    font-size: 14px;
+    text-align: left;
 }

@@ -10,7 +10,6 @@ require_once 'database.php';
       public function create_order($name, $email, $phone, $address, $size, $shape, $type, $toppings, $breads, $drinks, $sauces, $request){
         $query = "INSERT INTO orderRequestTable(name, email, phone, address, size, shape, type, toppings, breads, drinks, sauces, request) VALUES (:name, :email, :phone, :address, :size, :shape, :type, :toppings, :breads, :drinks, :sauces, :request)";
         
-        // The Failsafe: If something went wrong and MySQL didn't insert the row, we halt the execution and throw an Exception
         $stmt = $this->conn->prepare($query);
 
         return $stmt->execute([
