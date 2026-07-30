@@ -1,7 +1,7 @@
     </main>
 
     <footer>
-        <p>&copy; <?= date('Y'); ?> Yummy Pizza. All rights reserved.</p>
+        <p>&copy; <?= date('Y'); ?> Pizza. All rights reserved in the name of Pizza & Love.</p>
     </footer>
 </body>
 </html>
