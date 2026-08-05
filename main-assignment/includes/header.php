@@ -7,3 +7,22 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
+<body>
+
+    <header>
+
+        <nav>
+
+            <ul>
+
+                <li><a>HOME</a></li>
+                <li><a>PRODUCTS</a></li>
+                <li><a>REGISTER</a></li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+</body>
