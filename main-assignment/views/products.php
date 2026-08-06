@@ -1,6 +1,6 @@
 <?php
-require_once "../includes/database.php";
-include_once "../includes/header.php";
+require_once "includes/database.php";
+include_once "includes/header.php";
 
 $database = new Database();
 $conn = $database->connect();

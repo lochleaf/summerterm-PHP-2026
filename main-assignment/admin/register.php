@@ -1,6 +1,6 @@
 <?php 
     require_once 'includes/database.php';
-    require_once 'includes/UserCRUD.php';
+    require_once 'includes/ProductCRUD.php';
 
     include_once 'includes/header.php';
     if($_SERVER['REQUEST_METHOD'] !== 'POST'){
@@ -28,7 +28,7 @@
             throw new Exception("Password hashing runtime error");
         }
         $database = new Database();
-        $crud = new UserCRUD($database);
+        $crud = new ProductCRUD($database);
         if($crud->create_user($username, $email, $hashed_password)){
             //if it returns try print a nice green allert message
             echo "<div class='alert alert-success'> User Created</div>";
