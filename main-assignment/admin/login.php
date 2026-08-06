@@ -15,7 +15,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $conn = $database->connect();
 
       
-        $query = "SELECT * FROM users WHERE email = :email";
+        $query = "SELECT * FROM admin_users WHERE email = :email";
         $stmt = $conn->prepare($query);
         $stmt->bindParam(":email", $email);
         $stmt->execute();

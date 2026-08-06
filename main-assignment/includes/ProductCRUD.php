@@ -13,7 +13,7 @@ require_once 'includes/database.php';
 
       //made function to create insert the html information to the sql table
       public function products_info($productName, $description, $price, $quantity, $image){
-        $query = "INSERT INTO product(productName, description, price, quantity, image) VALUES (:productName, :description, :price, :quantity, :image)";
+        $query = "INSERT INTO products(productName, description, price, quantity, image) VALUES (:productName, :description, :price, :quantity, :image)";
         
         //prepare the SQL statement before it executes 
         $stmt = $this->conn->prepare($query);
