@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+.logo img{
+    width:80px;
+}
+
+body{
+    background-image: url("../images/background.png");
+    background-size: cover;
+    overflow: hidden;
+    background-size: 100%;
+}

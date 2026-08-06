@@ -12,9 +12,7 @@
 
     <header>
 
-        <div>
-            <img src="" alt="" width="">
-        </div>
+            <img src="images/IMG_4636.png" alt="logo" width="80">
 
         <nav>
 
@@ -27,7 +25,7 @@
             </ul>
         </nav>
 
-        <form action="../admin/login.php" method="POST">
+        <form action="admin/login.php" method="POST">
 
             <div class="form-group">
                 <label for="name">Username</label>
