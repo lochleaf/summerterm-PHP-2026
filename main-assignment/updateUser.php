@@ -7,7 +7,7 @@ $conn = $database->connect();
 
 $id = $_GET["id"];
 
-$query = "SELECT * FROM users WHERE id=:id";
+$query = "SELECT * FROM admin_users WHERE id=:id";
 $stmt = $conn->prepare($query);
 $stmt->execute([
 ":id"=>$id

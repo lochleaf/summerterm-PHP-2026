@@ -4,10 +4,10 @@
 
             <form action="admin/login.php" method="POST">
 
-                <div class="form-group">
-                    <label for="name">Username</label>
-                    <input type="text" id="name" name="name" class="form-control" required>
-                </div>
+                <!-- <div class="form-group"> -->
+                    <!-- <label for="name">Username</label> -->
+                    <!-- <input type="text" id="username" name="username" class="form-control" required> -->
+                <!-- </div> -->
                                 
                 <div class="form-group">
                     <label for="email">Email</label>

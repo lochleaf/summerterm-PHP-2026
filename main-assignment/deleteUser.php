@@ -7,7 +7,7 @@ $conn = $database->connect();
 
 if(isset($_GET["id"])){
 
-    $query="DELETE FROM users WHERE id=:id";
+    $query="DELETE FROM admin_users WHERE id=:id";
 
     $stmt=$conn->prepare($query);
 

@@ -1,6 +1,6 @@
 <?php
 //this fo the to connect to the database info
-require_once 'includes/database.php';
+require_once 'database.php';
 
 //made class for crud 
     class ProductCRUD{
@@ -28,5 +28,8 @@ require_once 'includes/database.php';
        ]);
         
       }
+
+      
+
     }
 ?>

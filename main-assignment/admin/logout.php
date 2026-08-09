@@ -1,12 +1,12 @@
 <?php
 
-require_once "../config.php";
+    require_once "session.php";
 
-session_unset();
+    session::start();
 
-session_destroy();
+    session::logout();
 
-header("Location: ../index.php");
-exit;
+    header("Location: login.php");
+    exit;
 
 ?>

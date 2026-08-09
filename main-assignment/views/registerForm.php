@@ -3,7 +3,7 @@
 
             <div class="form-group">
                 <label for="name">Username</label>
-                <input type="text" id="name" name="name" class="form-control" required>
+                <input type="text" id="username" name="username" class="form-control" required>
             </div>
                             
             <div class="form-group">
@@ -14,6 +14,11 @@
             <div class="form-group">
                 <label for="address">Password</label>
                 <input type="password" id="password" name="password" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Confirm_Password</label>
+                <input type="password" id="confirm_password" name="confirm_password" class="form-control" required>
             </div>
 
             <button type="submit">Register</button>

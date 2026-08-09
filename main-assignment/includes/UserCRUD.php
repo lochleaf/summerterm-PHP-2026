@@ -1,6 +1,6 @@
 <?php
 //this fo the to connect to the database info
-require_once 'includes/database.php';
+require_once __DIR__ . '/database.php';
 
 //made class for crud 
     class UserCRUD{
@@ -11,20 +11,44 @@ require_once 'includes/database.php';
         $this->conn = $db->connect();
       }
 
+
+        public function User_info(
+          string $username,
+          string $email,
+          string $hashed_password
+        ){
+
+          $query = "INSERT INTO admin_users
+            (username, email, password)
+            VALUES
+            (:username, :email, :password)";
+
+          $stmt = $this->conn->prepare($query);
+
+          $result = $stmt->execute([
+            ":username" => $username,
+            ":email" => $email,
+            ":password" => $hashed_password
+          ]);
+
+          return $result;
+        }
+
+
       //made function to create insert the html information to the sql table
-      public function User_info(string $username, string $email, string $hashed_password){
-        $query = "INSERT INTO admin_users(username, email, password) VALUES (:username, :email, :password)";
+      #public function User_info(string $username, string $email, string $hashed_password){
+        #$query = "INSERT INTO admin_users(username, email, password) VALUES (:username, :email, :password)";
         
         //prepare the SQL statement before it executes 
-        $stmt = $this->conn->prepare($query);
+        #$stmt = $this->conn->prepare($query);
 
         //execute the query and pass to the values for each placeholder for the table 
-        return $stmt->execute([
-          ":username"=>$username,
-          ":email"=>$email,
-          ":password"=>$hashed_password
-       ]);
+        #return $stmt->execute([
+         # ":username"=>$username,
+          #":email"=>$email,
+          #":password"=>$hashed_password
+       #]);
         
-      }
+      #}
     }
 ?>
