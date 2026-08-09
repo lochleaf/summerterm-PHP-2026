@@ -29,7 +29,15 @@ require_once 'database.php';
         
       }
 
-      
+      public function getAllProducts(){
+        $query = "SELECT * FROM products";
+        $stmt = $this->conn->prepare($query);
+        $stmt->execute();
+
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+      }
+
 
     }
+
 ?>

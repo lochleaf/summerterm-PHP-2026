@@ -11,13 +11,13 @@
                 require "views/home.php";
                 break;
 
-            case "products":
+            /*case "products":
                 require "views/products.php";
                 break;
 
             case "product":
                 require "views/product.php";
-                break;
+                break;*/
 
             case "register":
                 require "views/registerForm.php";

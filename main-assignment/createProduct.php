@@ -1,20 +1,68 @@
+<?php include_once __DIR__ . '/includes/header.php'; ?>
 <?php
+require_once __DIR__ . '/includes/database.php';
+require_once __DIR__ . '/includes/ProductCRUD.php';
+
+$database = new Database();
+$conn = $database->connect();
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $database = new Database();
+    $conn = $database->connect();
+
+    $productName = $_POST['productName'];
+    $description = $_POST['description'];
+    $price = $_POST['price'];
+    $quantity = $_POST['quantity'];
+    $image = $_POST['image'];
+
+    $query = "INSERT INTO products (productName, description, price, quantity, image) VALUES (:productName, :description, :price, :quantity, :image)";
+    $stmt = $conn->prepare($query);
+    $stmt->execute([
+        ':productName' => $productName,
+        ':description' => $description,
+        ':price' => $price,
+        ':quantity' => $quantity,
+        ':image' => $image
+    ]);
+
+    header("Location: views/products.php");
+    exit;
+}
+
 
 ?>
-<section class="lesson-masthead">
-    <h1>CRUD with Images</h1>
-</section>
-<section class="table-row">
-    <h2>Create User</h2>
-    <form method="post" enctype="multipart/form-data">
-        <label class="form-label">Name:</label>
-        <input class="form-control" type="text" name="name" required><br>
-        <label class="form-label">Email:</label>
-        <input class="form-control" type="email" name="email" required><br>
-        <label class="form-label">Image:</label>
-        <input class="form-control" type="file" name="image" accept="image/*"><br>
-        <button class="btn btn-primary" type="submit">Submit</button>
+
+
+<main>
+    <form action="createProduct.php" method="POST">
+        <div>
+            <lable for="productName">Product Name</lable>
+            <input type="text" name="productName" id="productName" placeholder="Product Name">
+        </div>
+        <div>
+            <lable for="description">Description</lable>
+            <input type="text" name="description" id="description" placeholder="Description">
+        </div>
+        <div>
+            <lable for="price">Price</lable>
+            <input type="number" name="price" id="price" placeholder="Price">
+        </div>
+        <div>
+            <lable for="quantity">Quantity</lable>
+            <input type="number" name="quantity" id="quantity" placeholder="Quantity">
+        </div>
+        <div>
+            <lable for="image">Image</lable>
+            <input type="text" name="image" id="image" placeholder="Image URL">
+        </div>
+        <button type="submit">Add Product</button>
     </form>
-    <a class="btn btn-success" href="index.php">Back</a>
-</section>
-<?php  ?>
+
+
+</main>
+
+
+
+
+<?php include_once __DIR__ . '/includes/footer.php'; ?>
