@@ -19,8 +19,8 @@
             <ul>
 
                 <li><a href="index.php?page=home">HOME</a></li>
-                <li><a href="../views/products.php">PRODUCTS</a></li>
-                <li><a href="../views/users.php">Users</a></li>
+                <li><a href="products_list.php">PRODUCTS</a></li>
+                <li><a href="users_list.php">Users</a></li>
                 <li><a href="index.php?page=register">REGISTER</a></li>
 
             </ul>
