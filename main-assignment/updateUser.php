@@ -4,20 +4,21 @@ require_once "includes/database.php";
 
 $database = new Database();
 $conn = $database->connect();
-
+$user = [];
 $id = $_GET["id"];
 
 $query = "SELECT * FROM admin_users WHERE id=:id";
 $stmt = $conn->prepare($query);
 $stmt->execute([
-":id"=>$id
+    ":id" => $id
 ]);
 
 $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
-if($_SERVER["REQUEST_METHOD"]=="POST"){
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $query = "UPDATE users
+
+    $query = "UPDATE admin_users
               SET username=:username,
                   email=:email
               WHERE id=:id";
@@ -26,38 +27,32 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 
     $stmt->execute([
 
-        ":username"=>$_POST["username"],
-        ":email"=>$_POST["email"],
-        ":id"=>$id
+        ":username" => $_POST["username"],
+        ":email" => $_POST["email"],
+        ":id" => $id
 
     ]);
 
-    header("Location: dashboard.php");
+    header("Location: users_list.php");
     exit;
 }
 
 ?>
 
-<form method="post">
+<form method="post" action="updateUser.php?id=<?php echo $id; ?>">
 
-Username
+    Username
 
-<input
-type="text"
-name="username"
-value="<?php echo htmlspecialchars($user["username"]); ?>">
+    <input type="text" name="username" value="<?php echo htmlspecialchars($user["username"]); ?>">
 
-Email
+    Email
 
-<input
-type="email"
-name="email"
-value="<?php echo htmlspecialchars($user["email"]); ?>">
+    <input type="email" name="email" value="<?php echo htmlspecialchars($user["email"]); ?>">
 
-<button>
+    <button type="submit">
 
-Update User
+        Update User
 
-</button>
+    </button>
 
 </form>

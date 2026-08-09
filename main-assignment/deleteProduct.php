@@ -16,7 +16,7 @@ if(isset($_GET["id"])){
     ]);
 }
 
-header("Location: views/products.php");
+header("Location: product_list.php");
 exit;
 
 ?>

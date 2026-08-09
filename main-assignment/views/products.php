@@ -11,7 +11,7 @@ $allProducts = $products->getAllProducts();
 
 <main>
   <ul>
-        <a href="../createProduct.php">Add Product</a>
+        <a href="./createProduct.php">Add Product</a>
 
       <?php foreach ($allProducts as $product): ?>
         <li>
@@ -20,8 +20,8 @@ $allProducts = $products->getAllProducts();
             <p>Price: $<?php echo htmlspecialchars($product['price']); ?></p>
             <p>Stock: <?php echo htmlspecialchars($product['quantity']); ?></p>
             <p><img width="100" heigh="100" src="<?php echo htmlspecialchars($product['image']); ?>" alt="<?php echo htmlspecialchars($product['productName']); ?>"></p>
-            <a class="btn btn-primary" href="../updateProduct.php?id=<?php echo $product['id']; ?>">Edit</a>
-            <a  class='btn btn-danger' href="../deleteProduct.php?id=<?php echo $product['id']; ?>">Delete</a>
+            <a class="btn btn-primary" href="./updateProduct.php?id=<?php echo $product['id']; ?>">Edit</a>
+            <a  class='btn btn-danger' href="./deleteProduct.php?id=<?php echo $product['id']; ?>">Delete</a>
         
         </li>
       <?php endforeach; ?>

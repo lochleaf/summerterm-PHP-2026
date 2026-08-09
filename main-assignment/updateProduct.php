@@ -33,7 +33,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         ":id"=>$id
     ]);
 
-    header("Location: views/products.php");
+    header("Location: product_list.php");
     exit;
 }
 ?>

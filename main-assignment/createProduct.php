@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         ':image' => $image
     ]);
 
-    header("Location: views/products.php");
+    header("Location: product_list.php");
     exit;
 }
 

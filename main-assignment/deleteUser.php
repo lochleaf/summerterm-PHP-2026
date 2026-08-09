@@ -16,7 +16,7 @@ if(isset($_GET["id"])){
     ]);
 }
 
-header("Location: dashboard.php");
+header("Location: users_list.php");
 exit;
 
 ?>

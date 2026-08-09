@@ -7,6 +7,5 @@
 body{
     background-image: url("../images/background.png");
     background-size: cover;
-    overflow: hidden;
     background-size: 100%;
 }

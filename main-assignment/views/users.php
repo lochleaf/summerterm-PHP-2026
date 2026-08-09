@@ -22,8 +22,8 @@ $users = $allUsers->getAllUsers();
                         username:
                         <?php echo htmlspecialchars($user['username']); ?>
                     </span>
-                    <a class="btn btn-primary" href="updateUser.php?id=<?php echo $user['id']; ?>">Edit</a>
-                    <a class="btn btn-danger" href="deleteUser.php?id=<?php echo $user['id']; ?>">Delete</a>
+                    <a class="btn btn-primary" href="./updateUser.php?id=<?php echo $user['id']; ?>">Edit</a>
+                    <a class="btn btn-danger" href="./deleteUser.php?id=<?php echo $user['id']; ?>">Delete</a>
                 </p>
 
 
