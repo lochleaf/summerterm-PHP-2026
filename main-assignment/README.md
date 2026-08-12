@@ -23,6 +23,7 @@ PDO is used to connect PHP to the database and execute SQL
 
 PHP session is used to manage user login sessions and protect loggedin
 
-
+problem and things that arent done 
+so basically public and private dont really work when I sign in because I felt like i have way too many problem with file path because of how much time I have to fix all that I decided ill cut my losses and be done but the rest do work
 
 
