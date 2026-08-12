@@ -1,9 +1,10 @@
 @charset "UTF-8";
 
+/* logo img size */
 .logo img{
     width:80px;
 }
-
+/* adds img background covers everything */
 body{
     background-image: url("../images/background.png");
     background-size: cover;

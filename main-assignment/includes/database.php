@@ -6,6 +6,7 @@
         private string $username = 'MarieEve200536258';
         private string $password = 'IfMrdZRXvE';
         
+        //stores the database connection
         private PDO $conn;
 
         //function that returns a connection to the database

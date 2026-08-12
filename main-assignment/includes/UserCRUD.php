@@ -11,67 +11,50 @@ require_once __DIR__ . '/database.php';
         $this->conn = $db->connect();
       }
 
-
+        //creates a function to add new user info into the database
         public function User_info(
           string $username,
           string $email,
           string $hashed_password
         ){
 
-          $query = "INSERT INTO admin_users
-            (username, email, password)
-            VALUES
-            (:username, :email, :password)";
+          //sql query to add the username & email and hashed password into the admin_users table
+          $query = "INSERT INTO admin_users(username, email, password) VALUES (:username, :email, :password)";
 
+          //prepare the sql statement before itis executed 
           $stmt = $this->conn->prepare($query);
-
-          $result = $stmt->execute([
-            ":username" => $username,
-            ":email" => $email,
-            ":password" => $hashed_password
-          ]);
-
+          //executes the query and puts the user info to the placeholders
+          $result = $stmt->execute([":username" => $username,":email" => $email,":password" => $hashed_password]);
+          //return the result
           return $result;
         }
-
+        //get all users from the admin_users table
         public function getAllUsers(){
+          //sql query to select all users from the database
           $query = "SELECT * FROM admin_users";
+          //prepares the sql statement before itis executed
           $stmt = $this->conn->prepare($query);
+          //it now executed
           $stmt->execute();
+          //get all users and returns them into array
           return $stmt->fetchAll(PDO::FETCH_ASSOC);
         }
 
-
+      //create function to add new user to the database 
       public function addUser( $username,  $email, $password, $confirm_password){
-        $query = "INSERT INTO admin_users (username, email, password) VALUES (:username, :email, :password)";
-        $stmt = $this->conn->prepare($query);
+      //sql to add to the new user info into the database 
+      $query = "INSERT INTO admin_users (username, email, password) VALUES (:username, :email, :password)";
+      //prepare the sql statement before itis executed   
+      $stmt = $this->conn->prepare($query);
+      //check if the password and confirm password match
         if ($password !== $confirm_password) {
             throw new Exception("Passwords do not match.");
         }
+        //hashes the password and store to database
         $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
-
-        return $stmt->execute([
-            ":username" => $username,
-            ":email" => $email,
-            ":password" => $hashed_password
-        ]);
+        //start the query and adds the user info to placeholders 
+        return $stmt->execute([":username" => $username,":email" => $email,":password" => $hashed_password]);
         }
-
-      //made function to create insert the html information to the sql table
-      #public function User_info(string $username, string $email, string $password, string $hashed_password){
-      /*  $query = "INSERT INTO admin_users(username, email, password) VALUES (:username, :email, :password)";
-        
-        //prepare the SQL statement before it executes 
-        $stmt = $this->conn->prepare($query);
-
-        //execute the query and pass to the values for each placeholder for the table 
-        return $stmt->execute([
-          ":username"=>$username,
-          ":email"=>$email,
-          ":password"=>$hashed_password
-       ]);
-        
-      }*/
     }
 ?>

@@ -10,14 +10,15 @@
 
 <body>
 
+    <!-- contain the header section of the webpage and because it header -->
     <header>
-
+            <!-- website img logo -->
             <img src="images/IMG_4636.png" alt="logo" width="80">
-
+        <!-- the nav -->
         <nav>
-
+            <!-- creates a list of nav links -->
             <ul>
-
+                <!-- links to pages -->
                 <li><a href="index.php?page=home">HOME</a></li>
                 <li><a href="product_list.php">PRODUCTS</a></li>
                 <li><a href="users_list.php">Users</a></li>
