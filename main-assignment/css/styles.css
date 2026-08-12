@@ -8,5 +8,11 @@
 body{
     background-image: url("../images/background.png");
     background-size: cover;
+    background-repeat: no-repeat;
     background-size: 100%;
+}
+
+#circle{
+    width: 450px; 
+    height: 450px;
 }

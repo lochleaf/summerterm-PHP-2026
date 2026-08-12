@@ -21,18 +21,18 @@
 <!-- create bootstrap row and center the content -->
 <div class="row justify-content-center">
     <!-- set the width of the content using bootstrap -->
-    <div class="col-md-8">
-        <!-- create bootstrap card with small shadow -->
-        <div class="card shadow-sm">
-            <!--  -->
-            <div class="card-header bg-dark text-white">
+    <div class="col-md-8 d-flex justify-content-center">
+        <!-- create circle container -->
+        <div class="bg-danger-subtle rounded-circle shadow d-flex align-items-center justify-content-center text-center" id="circle">
+            <!-- create the main content inside the circle -->
+            <div class="p-5">
                 <!-- shows a title of the protected user area -->
-                <h4 class="mb-0">Protected User Space</h4>
+                <h4 class="mb-0">You are special and protected</h4>
             </div>
             <!-- create the main body of the card -->
             <div class="card-body">
                 <!-- welcome message using the logged in user username and safely output it too -->
-                <h5 class="card-title text-success">Welcome Back, <?php echo htmlspecialchars($activeUsername); ?>!</h5>
+                <h5 class="card-title text-success">Welcome Back longtime no see, <?php echo htmlspecialchars($activeUsername); ?>!</h5>
                 <p class="card-text">You have passed security access barriers via object-oriented tracking metrics.</p>
                 <!-- add horizontal line to separate the content -->
                 <hr>
