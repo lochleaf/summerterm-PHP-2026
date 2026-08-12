@@ -6,10 +6,10 @@
 }
 /* adds img background covers everything */
 body{
-    background-image: url("../images/background.png");
+    background-color: rgb(51, 32, 70);
     background-size: cover;
-    background-repeat: no-repeat;
     background-size: 100%;
+    color: aliceblue;
 }
 
 #circle{
